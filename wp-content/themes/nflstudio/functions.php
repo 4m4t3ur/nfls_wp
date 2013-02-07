@@ -2,6 +2,7 @@
 /**
  */
 
+// Add scripts for theme to header
 function addHeader() {
 ?>
   <link rel="stylesheet" type="text/css" href="<?php print get_bloginfo('stylesheet_directory'); ?>/css/stickyFooter.css" />
@@ -25,11 +26,15 @@ function addHeader() {
 add_action( 'wp_head', 'addHeader' );
 
 
+// Add jquery and other existing scripts the right way
 function my_scripts() {
 		wp_enqueue_script('jquery');
 }
 add_action('wp_enqueue_scripts', 'my_scripts');
 
+
+// Add theme support for Featured Image
+add_theme_support( 'post-thumbnails' ); 
 
 
 

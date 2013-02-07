@@ -50,6 +50,8 @@ strong, .strong {font-weight: 700;}
 
 .printedContent {line-height: 1.3; text-align: justify; max-width: 630px; padding: 15px 0 15px 0; }
 
+.wp-post-image { width: 100%; height: auto !important; margin-top: -15px; margin-bottom: 10px;}
+
 .alignright { float: right; margin-left: 15px; margin-bottom: 15px; }
 
 /* video pages */
@@ -113,7 +115,6 @@ strong, .strong {font-weight: 700;}
 .menuContainer ul li ul li.page_item a,
 .menuContainer ul li ul li.current_page_item ul li.page_item a,
 .menuContainer ul li.current_page_ancestor ul li.current_page_parent ul li.page_item a
-
  {
 	color: #999999;	
 	font-weight: 700; 

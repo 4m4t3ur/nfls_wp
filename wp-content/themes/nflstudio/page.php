@@ -25,6 +25,13 @@ RSSImport(
 ?>
             
             <div class="printedContent">
+            	<?php
+								// check if the post has a Post Thumbnail assigned to it and print it if it exists
+								if ( has_post_thumbnail() ) {
+									the_post_thumbnail('medium');
+								} 							
+							?>
+            
 							<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?>
             </div>
             
