@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Image Flying Test</title>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="jquery.fly.compressed.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('span').fly({movement:'float',maxRotations:1,minRotations:1,reset:true});
+			});
+		</script>
+	</head>
+	<body>
+		<span><input type="button" value="Starfield" onclick="$.fn.fly.starfield();" /></span>
+		<span><input type="button" value="Explosion" onclick="$.fn.fly.explosion();" /></span>
+		<span><input type="button" value="Blackhole" onclick="$.fn.fly.blackhole();" /></span>
+		<span><input type="button" value="Blizzard" onclick="$.fn.fly.blizzard();" /></span>
+		<span><input type="button" value="Rain" onclick="$.fn.fly.rain();" /></span>
+		<span><input type="button" value="Matrix" onclick="$.fn.fly.matrix();" /></span>
+		<span><input type="button" value="Fire" onclick="$.fn.fly.fire();" /></span>
+		<span><input type="button" value="Balloons" onclick="$.fn.fly.balloons();" /></span>
+		<span><input type="button" value="Bubbles" onclick="$.fn.fly.bubbles();" /></span>
+		<br />
+		<div>
+			<p>These are different examples of the animation effects that are pre-built into the plugin</p>
+			<p>Most effects work the best with text only, and by invoking effects on such HTML elments</p>
+			<p>As span,b,p,i,u,div... ect</p>
+			<p>Example, to make this text go crazy (will invoke the random movement), plress this button:
+				<input type="button" value="Random Text" onclick="$('p').fly({maxRotations:2,minRotations:1});" />
+			</p>
+			<p>
+				that was the random effect, here is a explosion effect with random text color:
+				<input type="button" value="Explode Text" onclick="$('p').fly({movement:'explode',randomColor:true,maxRotations:2,minRotations:1});" />
+			</p>
+	</body>
+</html>

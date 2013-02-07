@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body { background-image:url(../img/filmStrip.png);  background-position: right; background-repeat: repeat-y; margin: 0; padding: 0; z-index: 0; font-family: 'Rambla', Helvetica, Arial, sans-serif; font-weight: 400; }
+
+a { color: #f0741e; text-decoration: none; }
+
+h1 { font-size: 35pt; margin-top: 67px; margin-bottom: 10px; font-weight: 700;}
+h2 { font-size: 25pt; margin-top: 67px; margin-bottom: 10px; font-weight: 700;}
+h2 a { color: #000000; }
+
+.black { color: #000000; }
+
+#logo { padding-left: 12px; }
+
+#main { overflow: hidden; min-height: 300px; }
+
+.border1 {border: 1px solid #008800;}
+.border2 {border: 1px solid #990000;}
+.border3 {border: 1px solid #0066cc;}
+
+strong, .strong {font-weight: 700;}
+
+.logoContainer {width: 160px; position: absolute; left: -190px; margin-top: 15px;}
+
+#logo { z-index: 1; position: relative; }
+#logoText { z-index: 2; position: relative; }
+
+#logo { width: 160px; padding-left: 3px; }
+#logoText { width: 160px; }
+
+
+.contentFrame {float: right; max-width: 830px; min-width: 300px; width: 100%; }
+
+.demoLike { float: right; margin-top: 80px; }
+
+.languageSelecta { margin: 15px 90px 0 0; position: absolute; right: 0;}
+
+.contentContainer {
+	margin: 45px 90px 0 30px;
+	padding: 0;	
+	min-width: 200px;
+	max-width: 830px;
+}
+
+.content { 
+	width: 100%;
+	position: relative;
+}
+
+.printedContent {line-height: 1.3; text-align: justify; max-width: 600px; padding: 15px 15px 15px 0; }
+
+.alignright { float: right; margin-left: 15px; margin-bottom: 15px; }
+
+/* video pages */
+.videoContainer { width: 275px; min-height: 200px;  border-radius:10px 10px 10px 10px;-moz-border-radius:10px 10px 10px 10px;-webkit-border-radius:10px 10px 10px 10px; background: #eeeeee; border: 1px solid #cccccc; padding: 15px; float: left; margin: 0 15px 15px 0;  overflow: hidden; position: relative; }
+
+.videoImg { width: 270px; height: auto; border-radius:10px 10px 10px 10px;-moz-border-radius:10px 10px 10px 10px;-webkit-border-radius:10px 10px 10px 10px; }
+
+.frontPageVideoImg { width: 190px; height: auto; border-radius:10px 10px 10px 10px;-moz-border-radius:10px 10px 10px 10px;-webkit-border-radius:10px 10px 10px 10px; }
+
+.videoLinkText { color: #ffffff; margin-top: -100px; position: absolute; margin-left: 15px; background-color: #000000; padding: 5px; }
+/* video pages end */
+
+.newsContainer { width: 100%; max-width: 600px; min-height: 100px;  border-radius:10px 10px 10px 10px;-moz-border-radius:10px 10px 10px 10px;-webkit-border-radius:10px 10px 10px 10px; background: #eeeeee; border: 1px solid #cccccc; padding: 15px; float: left; margin: 0 15px 15px 0;  overflow: hidden; position: relative; }
+
+.newsContainer .videoImg { width: 190px; margin-left: 15px; }
+
+.frontVidContain {
+	float: left; margin-right: 15px; height: 160px; margin-top: 10px;
+}
+
+.smallerVideo {
+	float: left; margin-right: 15px; height: 140px; margin-top: 10px; margin-bottom: 10px;
+}
+
+.smallerVideo .videoImg { width: 195px; border: 5px solid #000000; }
+
+
+
+/* MENU */
+
+.tinynav { display: none }
+
+.menuContainer ul, li.page_item {
+	display: inline;	
+}
+
+.menuContainer ul, .menuContainer ul li ul {
+	margin: 0;
+	padding: 0;	
+}
+
+.menuContainer ul li ul {
+	position: absolute; top: 31px; left: 0; 
+}
+
+.menuContainer {
+	margin-top: 37px;	
+}
+
+.menuContainer ul li.page_item a {
+	color: #000000;	
+	font-weight: 700; 
+	font-size: 17pt;
+	margin-right: 18px;
+}
+
+.menuContainer ul li ul li.page_item a {
+	color: #999999;	
+	font-weight: 700; 
+	font-size: 13pt;
+	margin-right: 20px;
+}
+
+.menuContainer ul li.current_page_parent a,
+.menuContainer ul li ul li.current_page_item a,
+.menuContainer ul li.current_page_item a	
+ {
+	color: #f0741e; 
+}
+
+/* MENU END */
+
+
+/* FOOTER */
+
+.contacts {
+	background-color: #616161; height: 35px; margin-right: 47px; color: #ffffff; text-align: right; font-size: 12pt; 
+	padding: 0 10px 0 0; 
+	line-height: 13px;
+}
+
+/* VIRUS */
+#virusWrap {
+/*
+	width: 400px;
+	height: 300px;
+	background-color: #9ff;
+*/
+}
+
+#virus {
+	width: 75px;
+	height:66px;
+	position:fixed;
+	background-image:url(../img/virus.gif);
+	margin-top: 500px;
+	z-index: 2;
+}
+
+/* Hacks */
+
+.wpcf7-textarea, .wpcf7-text { width: 222px; }
+
+.nocomments { display: none; }
+
+#wpml_credit_footer { display: none; height: 0; }
+
+#viiruss {z-index: 2;}
+
+#facebook-comments { float: left; } 
