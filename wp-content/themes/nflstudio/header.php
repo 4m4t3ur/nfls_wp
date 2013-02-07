@@ -58,7 +58,7 @@
             </div>
             <div class="menuContainer">
 							<ul class="frontPage"><li class="page_item <?php if(is_front_page()) print "current_page_item"; ?>"><a href="<?php echo site_url(); ?>" title="Esileht"><?php print $printFrontPage; ?></a></li></ul>
-              <?php flexipages('show_subpages=3&sort_column=menu_order'); ?>
+              <?php flexipages('show_subpages=2&sort_column=menu_order'); ?>
             </div>
             <?php /*<div id="virusWrap">
             	<a href="http://www.neti.ee" class="lightview"><img id="virus" src="<?php print get_bloginfo('stylesheet_directory'); ?>/img/virus.gif" alt="virus" /></a>

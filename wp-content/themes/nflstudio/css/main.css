@@ -92,7 +92,11 @@ strong, .strong {font-weight: 700;}
 }
 
 .menuContainer ul li ul {
-	position: absolute; top: 31px; left: 0; 
+	position: absolute; top: 31px; left: 0; width: 100%; max-width: 630px;
+}
+
+.menuContainer ul li ul li ul {
+	top: 27px;
 }
 
 .menuContainer {
@@ -106,7 +110,11 @@ strong, .strong {font-weight: 700;}
 	margin-right: 18px;
 }
 
-.menuContainer ul li ul li.page_item a {
+.menuContainer ul li ul li.page_item a,
+.menuContainer ul li ul li.current_page_item ul li.page_item a,
+.menuContainer ul li.current_page_ancestor ul li.current_page_parent ul li.page_item a
+
+ {
 	color: #999999;	
 	font-weight: 700; 
 	font-size: 13pt;
@@ -114,6 +122,9 @@ strong, .strong {font-weight: 700;}
 }
 
 .menuContainer ul li.current_page_parent a,
+.menuContainer ul li.current_page_ancestor a,
+.menuContainer ul li.current_page_ancestor ul li.current_page_parent a,
+.menuContainer ul li.current_page_ancestor ul li.current_page_parent ul li.current_page_item a,
 .menuContainer ul li ul li.current_page_item a,
 .menuContainer ul li.current_page_item a	
  {
