@@ -2,7 +2,7 @@
 /* CSS Document */
 
 @media all and (min-width:1200px) {
-	.printedContent p {font-size: 15pt;}
+/*	.printedContent p {font-size: 15pt;} */
 	.contentFrame { float: none; width: 830px; margin-left:  auto; margin-right:  auto; padding-left: 250px; }
 
 .logoContainer {width: 200px; position: absolute; left: -230px; margin-top: -20px;}
