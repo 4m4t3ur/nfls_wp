@@ -48,7 +48,7 @@
 						
 					?>
           <a class="<?php if($currentLang == et) print "strong";  ?>" href="<?php echo site_url(); ?>">est</a> / <a class="<?php if($currentLang == en) print "strong";  ?>" href="<?php echo site_url(); ?>/?lang=en">eng</a> / <a class="<?php if($currentLang == ru) print "strong";  ?>" href="<?php echo site_url(); ?>/?lang=ru">rus</a><br>
-          <a href="#" style="color: #999999;">Kontakt</a>
+          <a href="<?php echo site_url(); ?>/stuudio/kontakt/" style="color: #999999;">Kontakt</a>
         </div>
         <div class="contentContainer">
           <div class="content">
