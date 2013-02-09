@@ -23,7 +23,7 @@ get_header(); ?>
 
 
 
-<?php 
+<?php /*
 	$videos = array(
 		1 => "gQe8dAm8RCs",
 		2 => "Sh2yH_hjep4",
@@ -42,6 +42,9 @@ get_header(); ?>
 
 <iframe style="width: 100%; height: auto !important; max-width: 630px;  min-height: 356px;" src="http://www.youtube.com/embed/<?=$theVideo?>?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>
 
+*/ ?>
+
+<iframe style="width: 100%; height: auto !important; max-width: 630px;  min-height: 356px;" src="http://www.youtube.com/embed/videoseries?list=PL7lljR6ztfNjSLs3FkN1Z_lvYWvjjv2IK&autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>
   <br /><br />
   
 <?php query_posts('tag=facebook&showposts=0'); ?>
