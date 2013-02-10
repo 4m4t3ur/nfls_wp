@@ -6,7 +6,7 @@ Template Name: Videoteek
 get_header(); ?>
 
   <h2><a href="<?php echo site_url(); ?>/videoteek/lastefilmid/">Laste filmid</a></h2>
-<?php query_posts('tag=lapsed&showposts=0'); ?>
+<?php query_posts('tag=lapsed&showposts=0&suppress_filters=1'); ?>
 <?php while (have_posts()) : the_post(); ?>
     <div class="smallerVideo">
 			<?php
@@ -25,7 +25,7 @@ get_header(); ?>
 <div style="clear: both;"></div>
 
   <h2><a href="<?php echo site_url(); ?>/videoteek/noorte-filmid/">Noorte filmid</a></h2>
-<?php query_posts('tag=noored&showposts=0'); ?>
+<?php query_posts('tag=noored&showposts=0&suppress_filters=1'); ?>
 <?php while (have_posts()) : the_post(); ?>
     <div class="smallerVideo">
 			<?php
@@ -45,7 +45,7 @@ get_header(); ?>
 
 
   <h2><a href="<?php echo site_url(); ?>/videoteek/taiskasvanute-filmid/">Täiskasvanute filmid</a></h2>
-<?php query_posts('tag=suured&showposts=0'); ?>
+<?php query_posts('tag=suured&showposts=0&suppress_filters=1'); ?>
 <?php while (have_posts()) : the_post(); ?>
     <div class="smallerVideo">
 			<?php

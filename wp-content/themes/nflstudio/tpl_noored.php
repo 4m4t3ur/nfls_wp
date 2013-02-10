@@ -6,7 +6,7 @@ Template Name: Noored
 get_header(); ?>
   <h1><?php the_title(); ?></h1>
   <div class="printedContent">
-<?php query_posts('tag=noored&showposts=0'); ?>
+<?php query_posts('tag=noored&showposts=0&suppress_filters=1'); ?>
 <?php while (have_posts()) : the_post(); ?>
     <div class="smallerVideo">
 			<?php
