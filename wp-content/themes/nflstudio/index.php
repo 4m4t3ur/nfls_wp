@@ -2,6 +2,14 @@
 /**
  */
 get_header(); ?>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=505683549463582";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <br />
 <br />
   <div class="printedContent">
@@ -47,7 +55,10 @@ get_header(); ?>
 <iframe style="width: 100%; height: auto !important; max-width: 630px;  min-height: 356px;" src="http://www.youtube.com/embed/videoseries?list=PL7lljR6ztfNjSLs3FkN1Z_lvYWvjjv2IK&autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>
   <br /><br />
   
-<?php query_posts('tag=facebook&showposts=0'); ?>
+<div class="fb-like-box" data-href="http://www.facebook.com/nukufilmilastestuudio" data-width="630" data-height="1000" data-show-faces="false" data-stream="true" data-header="true"></div>  
+  
+  
+<?php /* query_posts('tag=facebook&showposts=0'); ?>
 <?php while (have_posts()) : the_post(); ?>
     <div class="newsContainer">
 			<?php
@@ -58,7 +69,7 @@ get_header(); ?>
 			print $post->post_content;
 			?>
     </div>            
-<?php endwhile;?>
+<?php endwhile; */?> 
 <?php /*
 			<div class="nav-previous alignleft"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentytwelve' ) ); ?></div>
 			<div class="nav-next alignright"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?></div>
