@@ -52,7 +52,7 @@ get_header(); ?>
 
 */ ?>
 
-<iframe style="width: 100%; height: auto !important; max-width: 630px;  min-height: 356px;" src="http://www.youtube.com/embed/videoseries?list=PL7lljR6ztfNjSLs3FkN1Z_lvYWvjjv2IK&autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe style="width: 100%; height: auto !important; max-width: 630px;  min-height: 356px;" src="http://www.youtube.com/embed/videoseries?list=PL7lljR6ztfNjSLs3FkN1Z_lvYWvjjv2IK&rel=0" frameborder="0" allowfullscreen></iframe>
   <br /><br />
   
 <div class="fb-like-box" data-href="http://www.facebook.com/nukufilmilastestuudio" data-width="630" data-height="1000" data-show-faces="false" data-stream="true" data-header="true"></div>  
