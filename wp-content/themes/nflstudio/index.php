@@ -58,10 +58,10 @@ $shuffle=rand(0,9);
 <iframe style="width: 100%; height: auto !important; max-width: 630px;  min-height: 356px;" src="http://www.youtube.com/embed/videoseries?list=PL7lljR6ztfNjSLs3FkN1Z_lvYWvjjv2IK&rel=0&index=<?=$shuffle?>" frameborder="0" allowfullscreen></iframe>
   <br /><br />
   
-<div class="fb-like-box" data-href="http://www.facebook.com/nukufilmilastestuudio" data-width="630" data-height="1000" data-show-faces="false" data-stream="true" data-header="true"></div>  
+
   
-  
-<?php /* query_posts('tag=facebook&showposts=0'); ?>
+<?php // query_posts('tag=facebook&showposts=0'); ?>
+<?php  query_posts('tag=facebook&showposts=5'); ?>
 <?php while (have_posts()) : the_post(); ?>
     <div class="newsContainer">
 			<?php
@@ -72,11 +72,14 @@ $shuffle=rand(0,9);
 			print $post->post_content;
 			?>
     </div>            
-<?php endwhile; */?> 
+<?php endwhile; ?> 
 <?php /*
 			<div class="nav-previous alignleft"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentytwelve' ) ); ?></div>
 			<div class="nav-next alignright"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?></div>
 */ ?>
   </div>
 <br /><br /> 
+
+<div class="fb-like-box" data-href="http://www.facebook.com/nukufilmilastestuudio" data-width="630" data-height="1000" data-show-faces="false" data-stream="true" data-header="true"></div>
+
 <?php get_footer(); ?>
