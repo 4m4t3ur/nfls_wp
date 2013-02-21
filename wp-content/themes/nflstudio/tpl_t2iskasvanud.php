@@ -5,7 +5,6 @@ Template Name: T2iskasvanud
  */
 get_header(); ?>
   <h1><?php the_title(); ?></h1>
-  <div class="printedContent">
 <?php query_posts('tag=suured&showposts=0&suppress_filters=1'); ?>
 <?php while (have_posts()) : the_post(); ?>
     <div class="smallerVideo">
@@ -22,6 +21,5 @@ get_header(); ?>
       <!--<h2><a href="http://www.youtube.com/embed/<?=$videoId?>?autoplay=1&hd=1" class="videoLinkText lightview"  data-lightview-title="<?php the_title(); ?>" data-lightview-options="skin: 'mac'"><?php the_title(); ?></a></h2>-->
     </div>            
 <?php endwhile;?>
-  </div>
 <br /><br />
 <?php get_footer(); ?>
