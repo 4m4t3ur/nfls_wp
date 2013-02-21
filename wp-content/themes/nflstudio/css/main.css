@@ -34,7 +34,7 @@ strong, .strong {font-weight: 700;}
 
 .demoLike { float: right; margin-top: 80px; }
 
-.languageSelecta { margin: 15px 90px 0 0; position: absolute; right: 0;}
+.languageSelecta { margin: 10px 90px 0 0; position: absolute; right: 0;}
 
 .contentContainer {
 	margin: 45px 90px 0 30px;
