@@ -61,7 +61,7 @@ $shuffle=rand(0,9);
 
   
 <?php // query_posts('tag=facebook&showposts=0'); ?>
-<?php  query_posts('tag=facebook&showposts=5'); ?>
+<?php /*  query_posts('tag=facebook&showposts=5'); ?>
 <?php while (have_posts()) : the_post(); ?>
     <div class="newsContainer">
 			<?php
@@ -72,7 +72,7 @@ $shuffle=rand(0,9);
 			print $post->post_content;
 			?>
     </div>            
-<?php endwhile; ?> 
+<?php endwhile; */ ?> 
 <?php /*
 			<div class="nav-previous alignleft"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentytwelve' ) ); ?></div>
 			<div class="nav-next alignright"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?></div>
